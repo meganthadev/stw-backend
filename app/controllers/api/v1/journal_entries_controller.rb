@@ -17,17 +17,17 @@ class Api::V1::JournalEntriesController < ApplicationController
         end 
 
         def show 
-            @journal_entry = JournalEntry.find(params [:id])
+            @journal_entry = JournalEntry.find(params[:id])
             render json: @journal_entry
         end 
 
         def update 
-            @journal_entry = JournalEntry.find(params [:id])
+            @journal_entry = JournalEntry.find(params[:id])
             render json: @journal_entry
         end 
 
         def destroy 
-            @journal_entry = JournalEntry.find(params [:id])
+            @journal_entry = JournalEntry.find(params[:id])
             @journal_entry.destroy
         end 
 
@@ -39,7 +39,7 @@ class Api::V1::JournalEntriesController < ApplicationController
         end  
 
         def set_product
-            @product = Product.find(params [:product_id])
+            @product = Product.find(params[:product_id])
         end 
 
 end
