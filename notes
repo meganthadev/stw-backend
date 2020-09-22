@@ -1,0 +1,9 @@
+Product 
+    has_many :journal_entries
+    name:string, image_url:string, rating:integer, description:text, ingredients:text
+
+
+
+JournalEntry
+    belongs_to :product
+    product_id:integer, journal_entry:text, entry_date:datetime, entry_type:string (the entry_type will be Good, Bad, or Neutral)
