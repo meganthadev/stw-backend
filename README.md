@@ -1,9 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Backend README for Skin That Wins :)
 
-Things you may want to cover:
+Run bundle install, rails s to begin server
+
+Installation/Start-Up Instructions:
+
+Run 'git clone git@github.com:meganthadev/stw-backend.git' Run 'bundle install --full-index' (installs all gems/dependencies) Run 'git remote set-url origin git@github.com:meganthadev/stw-backend.git' , then run 'eval $(ssh-agent)' then 'ssh-add ~/.ssh/id_rsa' then enter ssh passphrase only once before any git commits.
+
+Frontend (React/HTML/CSS) Clone: git@github.com:meganthadev/stw-frontend.git Run npm start to activate frontend and view index.js in browser (with rails server running).
 
 * Ruby version
 
@@ -15,10 +20,4 @@ Things you may want to cover:
 
 * Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
