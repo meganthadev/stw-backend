@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_22_024715) do
+ActiveRecord::Schema.define(version: 2020_09_23_053611) do
 
   create_table "journal_entries", force: :cascade do |t|
     t.integer "product_id"
-    t.text "journal_entry"
+    t.text "entry"
     t.datetime "entry_date"
     t.string "entry_type"
     t.datetime "created_at", null: false
