@@ -12,7 +12,7 @@ class Api::V1::JournalEntriesController < ApplicationController
             if @journal_entry.save 
                 render json: @product 
             else  
-                render json: {error: 'Error, Could Not Save Entry'}
+                render json: {error: 'Error: Could Not Save Entry. Try Writing More...'}
             end 
         end 
 
