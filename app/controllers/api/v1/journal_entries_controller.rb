@@ -26,9 +26,11 @@ class Api::V1::JournalEntriesController < ApplicationController
             render json: @journal_entry
         end 
 
-        def destroy 
+        def destroy
             @journal_entry = JournalEntry.find(params[:id])
+            @product = Product.find(@journal_entry.product_id)
             @journal_entry.destroy
+            render json: @product
         end 
 
 
