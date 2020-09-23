@@ -10,7 +10,7 @@ class Api::V1::ProductsController < ApplicationController
             if @product.save 
                 render json: @product 
             else  
-                render json: {error: 'Error, Could Not Save Product'}
+                render json: {error: 'Error: Could Not Save Product. Check the Name...'}
             end 
         end 
 
@@ -21,6 +21,8 @@ class Api::V1::ProductsController < ApplicationController
 
         def update 
             @product = Product.find(params[:id])
+            @product.update(rating: params["product"]["rating"])
+            @product.save
             render json: @product
         end 
 
