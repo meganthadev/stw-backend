@@ -8,11 +8,11 @@ class Api::V1::JournalEntriesController < ApplicationController
         end 
 
         def create
-            @journal_entry = @product.JournalEntry.new(journal_entry_params)
+            @journal_entry = @product.journal_entries.new(journal_entry_params)
             if @journal_entry.save 
-                render json: @journal_entry 
+                render json: @product 
             else  
-                render json: {error: 'Error, could not save your Entry'}
+                render json: {error: 'Error, Could Not Save Entry'}
             end 
         end 
 
@@ -35,7 +35,7 @@ class Api::V1::JournalEntriesController < ApplicationController
      private 
 
         def journal_entry_params 
-            params.require(:journal_entry).permit(:product_id, :journal_entry, :entry_date, :entry_type)
+            params.require(:journal_entry).permit(:product_id, :entry, :entry_date, :entry_type)
         end  
 
         def set_product
