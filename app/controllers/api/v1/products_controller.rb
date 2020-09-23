@@ -10,7 +10,7 @@ class Api::V1::ProductsController < ApplicationController
             if @product.save 
                 render json: @product 
             else  
-                render json: {error: 'Error, could not save Product'}
+                render json: {error: 'Error, Could Not Save Product'}
             end 
         end 
 
