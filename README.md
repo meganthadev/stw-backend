@@ -10,7 +10,7 @@ Run 'git clone git@github.com:meganthadev/stw-backend.git' Run 'bundle install -
 
 Frontend (React/HTML/CSS) Clone: git@github.com:meganthadev/stw-frontend.git Run npm start to activate frontend and view index.js in browser (with rails server running).
 
-* Ruby version
+* Ruby version: 2.7.0p0
 
 * System dependencies
 
