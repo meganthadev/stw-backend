@@ -1,4 +1,4 @@
-# Backend README for Skin That Wins :)
+# Skin That Wins Backend README 
 
 
 Installation/Start-Up Instructions:
