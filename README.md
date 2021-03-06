@@ -1,7 +1,7 @@
 # Skin That Wins - The Backend README 
 
 
-## Welcome to Skin That Wins! A vibrant, honest, user-curated app all about skin care. Where users can add and share their own go-to's and no-go's. For those of us who are tired of spending money on skin care that does not deliver "Skin That Wins"!
+## Welcome to Skin That Wins! A vibrant, honest, user-curated app all about skin care. Where users can add and share their own go-to's and no-go's (you will NOT find any sponsorships or targeted ads on our site! For those of us who are tired of spending money on skin care that does not deliver "Skin That Wins"!
 
 
 
